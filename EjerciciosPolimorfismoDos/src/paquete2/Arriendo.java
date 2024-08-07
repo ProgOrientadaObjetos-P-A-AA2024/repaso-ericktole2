@@ -28,7 +28,7 @@ public abstract class Arriendo {
     public void establecerCuotaBase(double x){
         cuotaBase = x;
     }
-    
+    // pueden pedir 2 metodos 
     public abstract void establecerArriendoMensual();
     
     public String obtenerNombreArrendatario(){

@@ -16,15 +16,15 @@ public class CentroComercial {
 
     private String nombre;
     private ArrayList<Arriendo> arriendos = new ArrayList<>();
-    private double totalArriendosFinalMensual;
-    private double totalArriendosBaseMensual;
+    private double totalArriendosFinalMensual;// calcular valores 
+    private double totalArriendosBaseMensual;// calcular valores 
 
     public CentroComercial(String n, ArrayList<Arriendo> lista) {
         nombre = n;
         arriendos = lista;
     }
 
-    public void establecerNomre(String n) {
+    public void establecerNombre(String n) {
         nombre = n;
     }
 
@@ -36,6 +36,7 @@ public class CentroComercial {
         for (int i = 0; i < obtenerArriendos().size(); i++) {
             totalArriendosFinalMensual = totalArriendosFinalMensual
                     + obtenerArriendos().get(i).obtenerArriendoMensual();
+           
         }
     }
 

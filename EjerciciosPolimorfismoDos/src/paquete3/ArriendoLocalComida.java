@@ -16,7 +16,8 @@ public class ArriendoLocalComida extends Arriendo {
     private double iva;
     
     public ArriendoLocalComida(String nombre, double cuotaB){
-        super(nombre, cuotaB);
+       super(nombre, cuotaB);
+        
     }
     
     public ArriendoLocalComida(String nombre, double cuotaB, double vl, 
@@ -69,10 +70,12 @@ public class ArriendoLocalComida extends Arriendo {
                 + "Arriendo Total: %.2f\n", 
                 obtenerNombreArrendatario(),
                 obtenerCuotaBase(),
-                obtenerValorLuz(),
+                valorLuz,
                 obtenerValorAgua(),
                 obtenerIva(),
                 obtenerArriendoMensual());
+        // se pueden llamar los obtener y las variables para poder formar el 
+        // toString
         
         return cadena;
     }

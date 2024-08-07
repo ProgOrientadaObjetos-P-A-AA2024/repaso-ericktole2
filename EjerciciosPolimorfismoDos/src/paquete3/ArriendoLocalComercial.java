@@ -52,3 +52,6 @@ public class ArriendoLocalComercial extends Arriendo {
         return cadena;
     }
 }
+// revisar sobre escritura de metodos 
+// revisar como hacer el toString 
+
