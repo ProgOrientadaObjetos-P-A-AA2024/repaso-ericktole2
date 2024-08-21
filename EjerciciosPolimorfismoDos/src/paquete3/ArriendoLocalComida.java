@@ -74,9 +74,9 @@ public class ArriendoLocalComida extends Arriendo {
                 obtenerValorAgua(),
                 obtenerIva(),
                 obtenerArriendoMensual());
-        // se pueden llamar los obtener y las variables para poder formar el 
-        // toString
-        
+      // para formar el toString, podemos llamar a las variables y a los metodos
+      // obtener, ya qeu nos retornan la variable que se le otorgo
+      // en los dos metodos es valido y va a dar el mismo resultado   
         return cadena;
     }
     

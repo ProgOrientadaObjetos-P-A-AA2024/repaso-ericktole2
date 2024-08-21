@@ -29,6 +29,8 @@ public class Ejecutor {
         ArriendoLocalComida arriendoComida2 = new ArriendoLocalComida(
                 "Christian Cruz", 300, 10, 20.2, 40.2);
         
+        // hacemos uso del segundo constructor para poder establecer nuestros 
+        // parametros sin tener de llamar a los metodos establecer
         
         
         ArriendoLocalComercial arriendoComercial = new ArriendoLocalComercial(
@@ -43,13 +45,14 @@ public class Ejecutor {
         listaArriendos.add(arriendoComida);
         listaArriendos.add(arriendoComercial);
         listaArriendos.add(arriendoSesiones);
-        // el . size de eun array list es para determinar el numero de elementos 
+        // el . size de en array list es para determinar el numero de elementos 
         // dentro de un array 
         for (int i = 0; i < listaArriendos.size(); i++) {
-            listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
-                                                            // métodos abstracto
+            listaArriendos.get(i).establecerArriendoMensual(); 
+           // se llama a los métodos abstracto de cada obejto dento de la lista 
+           // para que sea posible el calcular lo que pide cada metodo
             System.out.println(listaArriendos.get(i));
-            System.out.println();
+            // se imprimen todos los datos que ListaArriendos tenga dentro de el 
         }
         
         

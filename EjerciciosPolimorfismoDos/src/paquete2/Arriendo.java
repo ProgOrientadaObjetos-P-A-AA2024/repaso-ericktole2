@@ -18,6 +18,11 @@ public abstract class Arriendo {
     public Arriendo(String nombre, double cuotaB){
         // nombreArrendatario = nombre;
         establecerNombreArrendatario(nombre);
+        // simple mente enviamos el parametro nombre a un metodos para 
+        // establecer el nombre 
+        
+        // se puede utilizar varios metodos para poder dar un valor a un parametro
+        
         cuotaBase = cuotaB;
     }
     
@@ -28,7 +33,7 @@ public abstract class Arriendo {
     public void establecerCuotaBase(double x){
         cuotaBase = x;
     }
-    // pueden pedir 2 metodos 
+    // pueden pedir 2 metodos en el examen  
     public abstract void establecerArriendoMensual();
     
     public String obtenerNombreArrendatario(){

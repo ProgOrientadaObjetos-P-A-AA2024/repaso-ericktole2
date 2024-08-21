@@ -15,7 +15,10 @@ import paquete2.Arriendo;
 public class CentroComercial {
 
     private String nombre;
-    private ArrayList<Arriendo> arriendos = new ArrayList<>();
+    private ArrayList<Arriendo> arriendos = new ArrayList<>(); 
+    // Se crea un ArrayLisy de llamada Arriendo que es de tipo Arriendo
+    // donde se pueden insertar o añadir sub objetos de la clase padre
+    
     private double totalArriendosFinalMensual;// calcular valores 
     private double totalArriendosBaseMensual;// calcular valores 
 
@@ -39,8 +42,26 @@ public class CentroComercial {
            
         }
     }
+// .size para determinar el tamaño de la lista arriendos ya que esta esta dentro
+// del metodo obtenerarriendo() 
+    
+/* dentro del for realizamos un calculo, utilizando la variable 
+    totalArriendosBaseMensual sea igual a la misma variable , ya que vamos a 
+    acumular datoss en esta variable, seguido sumamos la cuota base de cada 
+    objeto que este dentro de arriendos, ya que gracias al get(i).obtenerCuotaBase
+    podemos recorrer entre cada obejto de la lista y poder sacar estos valores 
+    de el metodo obtenerCuotaBase() que nos devolvera tal valor y se podran 
+    acumular en cada interacion del ciclo for de esta manera podremos obtener 
+    el total de los arreindos mensual mente en la variable totalArriendosBaseMensual
 
-    public void establecerTotalArriendosBaseMensual() {
+
+
+
+
+
+    
+*/
+public void establecerTotalArriendosBaseMensual() {
         for (int i = 0; i < obtenerArriendos().size(); i++) {
             totalArriendosBaseMensual = totalArriendosBaseMensual
                     + obtenerArriendos().get(i).obtenerCuotaBase();
@@ -84,3 +105,4 @@ public class CentroComercial {
         return cadena;
     }
 }
+/// estudair toString 
