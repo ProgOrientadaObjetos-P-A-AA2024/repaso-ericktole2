@@ -53,13 +53,6 @@ public class CentroComercial {
     de el metodo obtenerCuotaBase() que nos devolvera tal valor y se podran 
     acumular en cada interacion del ciclo for de esta manera podremos obtener 
     el total de los arreindos mensual mente en la variable totalArriendosBaseMensual
-
-
-
-
-
-
-    
 */
 public void establecerTotalArriendosBaseMensual() {
         for (int i = 0; i < obtenerArriendos().size(); i++) {
@@ -67,7 +60,13 @@ public void establecerTotalArriendosBaseMensual() {
                     + obtenerArriendos().get(i).obtenerCuotaBase();
         }
     }
-
+/* de la misma manera , sacamos el tamaño del la lista gracias al metodo 
+   obtenerArriendos, dentro de ciclo for acumularemos valores en una variable 
+   llamada totalArriendosBaseMensual , en la cual se aculimara la misma variable +
+   la cuota base de cada objeto que este dentro de la lista arriendos, esto gracias  
+   a que utilizamos los metodos obtenerArriendos . get en la posision i para 
+   poder sacar el dato de obtenerCuotaBase de cada objeto existende en la lista 
+*/ 
     public String obtenerNombre() {
         return nombre;
     }

@@ -43,8 +43,9 @@ public class Ejecutor {
                 listaArriendos);
         centro.establecerTotalArriendosBaseMensual();
         centro.establecerTotalArriendosFinalMensual();
-        System.out.println(centro);// aqui estamos llamando al metrodo to string
-                                   // de centro 
+        System.out.println(centro);
+
+// aqui estamos llamando al metrodo to string de centro 
     
     }
 }
